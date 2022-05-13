@@ -52,9 +52,9 @@ class Login extends React.Component {
   render () {
     return (
       <div className="bg-secondary min-h-screen flex-center px-5">
-        <h3 className="text-white fixed top-5 left-5">Griter</h3>
+        {/* <h3 className="text-white fixed top-5 left-5">Griter</h3> */}
         <form onSubmit={this.login} className="flex flex-col rounded-xl bg-white shadow-sm px-9 py-12 w-full max-w-md">
-          <h3 className="text-center pb-12">Sign in to continue to Griter Admin</h3>
+          <h3 className="text-center pb-12">Sign in to continue to Library</h3>
 
           <Input label="Your email or phone number" name="email" onChange={this.handleChange} value={this.state.email} required/>
           <Input type="password" label="Password" name="password" onChange={this.handleChange} value={this.state.password} required/>                                
